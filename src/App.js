@@ -1,6 +1,3 @@
-import logo from "./logo.svg";
-import { Panzoom as NativePanzoom } from "@fancyapps/ui/dist/panzoom.esm";
-import "@fancyapps/ui/dist/panzoom.css";
 import "./App.css";
 
 function App() {
