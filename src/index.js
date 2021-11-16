@@ -4,22 +4,13 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+const rootElement = document.getElementById("building-app");
+
 window.addEventListener("DOMContentLoaded", (event) => {
-  ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-    document.getElementById("building-app")
-  );
+  ReactDOM.render(<App />, rootElement);
 });
 
-window.renderApp = () =>
-  ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-    document.getElementById("building-app")
-  );
+console.log("Building app data", rootElement);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
