@@ -2,9 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("real-estate-widget-container")
+const WidgetDivs = document.querySelectorAll("#real-estate-widget-container");
+
+console.log("Widget divs", WidgetDivs);
+
+WidgetDivs.forEach((Div) =>
+  ReactDOM.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    Div
+  )
 );

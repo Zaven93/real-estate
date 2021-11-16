@@ -17,5 +17,5 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"lY9v":[function(require,module,exports) {
 "use strict";function e(){return React.createElement("div",{className:"App"},React.createElement("header",{className:"App-header"},"Hello World"))}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0,require("./App.css");var t=e;exports.default=t;
 },{"./App.css":"EQHX"}],"Focm":[function(require,module,exports) {
-"use strict";var e=u(require("react")),t=u(require("react-dom")),r=u(require("./App"));function u(e){return e&&e.__esModule?e:{default:e}}t.default.render(e.default.createElement(e.default.StrictMode,null,e.default.createElement(r.default,null)),document.getElementById("real-estate-widget-container"));
+"use strict";var e=l(require("react")),t=l(require("react-dom")),r=l(require("./App"));function l(e){return e&&e.__esModule?e:{default:e}}var u=document.querySelectorAll("#real-estate-widget-container");console.log("Widget divs",u),u.forEach(function(l){return t.default.render(e.default.createElement(e.default.StrictMode,null,e.default.createElement(r.default,null)),l)});
 },{"react":"n8MK","react-dom":"NKHc","./App":"lY9v"}]},{},["Focm"], null)
